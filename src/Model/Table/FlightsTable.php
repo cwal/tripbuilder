@@ -74,8 +74,8 @@ class FlightsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['trip_id'], 'Trips'));
-        $rules->add($rules->existsIn(['from_airport_id'], 'FromAirport'));
-        $rules->add($rules->existsIn(['to_airport_id'], 'ToAirport'));
+        $rules->add($rules->existsIn(['from_airport_id'], 'FromAirports'));
+        $rules->add($rules->existsIn(['to_airport_id'], 'ToAirports'));
         return $rules;
     }
 }
